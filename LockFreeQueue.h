@@ -30,11 +30,10 @@ private:
         value_type  value;
     };
 
-    typedef LockFreeQueue<T>            _MyType;
-    typedef Node<T>                     _Node;
-
 public:
     // typedefs...
+    typedef LockFreeQueue<T>            _MyType;
+    typedef Node<T>                     _Node;
     typedef typename _Node::value_type  value_type;
 
 public:
@@ -113,4 +112,3 @@ private:
     _Node* volatile _head;
     _Node* volatile _tail;
 };
-
